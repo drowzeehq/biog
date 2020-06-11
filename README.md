@@ -52,17 +52,17 @@ const sampleFormat = biog.epochToSamples(epoch)
 console.log(sampleFormat.length) // 8
 console.log(sampleFormat)
 
-[
-  {
-    data: [-911.1328125,-802.734375,251.953125,106.93359375],
-    info: { startTime: 1635707 }
-  },
-  {
-    data: [-911.1328125,-802.734375,251.953125,106.93359375],
-    info: { startTime: 1635711 } // updated startTime
-  },
-  // ... 6 more samples
-]
+// [
+//   {
+//     data: [-911.1328125,-802.734375,251.953125,106.93359375],
+//     info: { startTime: 1635707 }
+//   },
+//   {
+//     data: [-911.1328125,-802.734375,251.953125,106.93359375],
+//     info: { startTime: 1635711 } // updated startTime
+//   },
+//   // ... 6 more samples
+// ]
 
 ```
 
