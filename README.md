@@ -22,7 +22,7 @@
 
 ## Example
 
-Convert from `EG1` to `Neurosity-1`
+Convert from `Epoch` to multiple `Sample`'s
 
 ```ts
 const epoch = {
@@ -80,8 +80,6 @@ type Sample = {
   };
 };
 ```
-
-### Neurosity-1
 
 Used by the neurosity device. Muse-js also has a similar format after using`zipSamples`.
 
