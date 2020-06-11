@@ -75,8 +75,8 @@ type Sample = {
   data: number[];
   info: {
     startTime: number;
-    samplingRate: number;
-    channelNames: string[];
+    samplingRate?: number;
+    channelNames?: string[];
   };
 };
 ```
@@ -97,5 +97,16 @@ type Epoch = {
     channelNames: string[];
     markers?: Marker[];
   };
+};
+```
+
+Used for storing a session as json:
+
+```ts
+type EEGSession = {
+  samples: Sample[];
+  channelNames: string[];
+  samplingRate: number;
+  markers: Marker[];
 };
 ```

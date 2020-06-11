@@ -18,16 +18,16 @@ type Sample = {
   timestamp: number;
 };
 
-type EEGSessionInterface = {
+type EEGSession = {
   samples: Sample[];
   channelNames: string[];
   samplingRate: number;
-  markers: [];
+  markers: Marker[];
 };
 
 export default {
   epochToSamples: (epoch: Epoch) => {
-    const session: EEGSessionInterface = {
+    const session: EEGSession = {
       samples: [],
       channelNames: epoch.info.channelNames,
       samplingRate: epoch.info.samplingRate,
